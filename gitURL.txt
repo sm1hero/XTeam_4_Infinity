@@ -1,0 +1,4 @@
+https://github.com/sm1hero/XTeam_4
+
+git config --global user.email "smirnovandryushnka01@gmail.com"
+git config --global user.name "XTeam_4_1"
