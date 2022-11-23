@@ -1,16 +1,188 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# Вводим логин и пароль для входа в программу
+a = str(input("Введите логин:"))
+c = str("itcube")  # Логин
+b = int(input("Введите пароль:"))
+d = 102938  # Пароль
+if a == c and b == d:  # Если ввели правильно, то входим в чат-бот
+    print("...Вы вошли в чат бот...")
+    print("Что вы хотите посмотреть?")
+    e = str(input("Введите запрос:"))  # Вводим день недели
+    course1 = ("Программирование роботов. LEGO WeDo")
+    course2 = ("Основы алгоритмики и логики")
+    course3 = ("Программирование на Python")
+    course4 = ("Web разработка")
+    course5 = ("Программирование на Java")
+    course6 = ("Мобильная разработка")
+    course7 = ("Основы 3-D моделирования и 3-D печати")
+    course8 = ("Программирование роботов. VEX IQ")
+    dn1 = str("Понедельник")
+    dn2 = str("Вторник")
+    dn3 = str("Среда")
+    dn4 = str("Четверг")
+    dn5 = str("Пятница")
+    dn6 = str("Суббота")
+    dn7 = str("Воскресенье")
+    if e == course1:
+        g = str(input("Введите день:"))
+        if g == dn1 or g == dn2 or g == dn4 or g == dn6 or g == dn7:
+            print("В этот день нет занятий")
+        if g == dn3:
+            print("Занятия будут:")
+            print("15:30-16:10 ПР/М-1")
+            print("16:20-17:00 ПР/М-1")
+            print("17:10-17:50 ПР/М-2")
+            print("18:00-18:40 ПР/М-2")
+            print("18:50-19:30 ПД/11")
+        if g == dn5:
+            print("Занятия будут:")
+            print("15:30-16:10 ПР/М-1")
+            print("16:20-17:00 ПР/М-1")
+            print("17:10-17:50 ПР/М-2")
+            print("18:00-18:40 ПР/М-2")
+    if e == course2:
+        g = str(input("Введите день:"))
+        if g == dn5 or g == dn7:
+            print("В этот день нет занятий")
+        if g == dn1:
+            print("Занятия будут:")
+            print("Танаева Т.А.")
+            print("11:00-11:40 АЛ-5")
+            print("11:50-12:30 АЛ-5")
+        if g == dn2:
+            print("Занятия будут:")
+            print("Танаева Т.А.")
+            print("15:30-16:10 АЛ-6")
+            print("16:20-17:00 АЛ-6")
+            print("17:10-17:50 АЛ-1")
+            print("18:00-18:40 АЛ-1")
+        if g == dn3:
+            print("Занятия будут:")
+            print("Танаева Т.А.")
+            print("11:00-11:40 АЛ-5")
+            print("11:50-12:30 АЛ-5")
+        if g == dn4:
+            print("Занятия будут:")
+            print("Танаева Т.А.")
+            print("15:30-16:10 АЛ-4")
+            print("16:20-17:00 АЛ-4")
+            print("17:10-17:50 АЛ-1")
+            print("18:00-18:40 АЛ-1")
+            print("18:50-19:30 ПД/1")
+        if g == dn6:
+            print("Занятия будут:")
+            print("Танаева Т.А.")
+            print("15:30-16:10 АЛ-4")
+            print("16:20-17:00 АЛ-4")
+            print("17:10-17:50 АЛ-6")
+            print("18:00-18:40 АЛ-6")
+            print("18:50-19:30 ПД/2")
+    if e == course3:
+        g = str(input("Введите день:"))
+        if g == dn4 or g == dn5 or g == dn6 or g == dn7:
+            print("В этот день нет занятий")
+        if g == dn1:
+            print("Занятия будут:")
+            print("Маликова В.Н.")
+            print("15:30-16:10 ПП-3")
+            print("16:20-17:00 ПП-3")
+            print("17:10-17:50 ПП-4")
+            print("18:00-18:40 ПП-4")
+        if g == dn2:
+            print("Занятия будут:")
+            print("Маликова В.Н.")
+            print("15:30-16:10 ПП-3")
+            print("16:20-17:00 ПП-3")
+            print("17:10-17:50 ПП-4")
+            print("18:00-18:40 ПП-4")
+        if g == dn3:
+            print("Занятия будут:")
+            print("Маликова В.Н.")
+            print("15:30-16:10 ПД/8")
+    if e == course4:
+        g = str(input("Введите день:"))
+        if g == dn1 or g == dn2 or g == dn4 or g == dn6 or g == dn7:
+            print("В этот день нет занятий")
+        if g == dn3:
+            print("Занятия будут:")
+            print("15:30-17:00 ВБ-1")
+            print("11:50-12:30 ВБ-1")
+        if g == dn5:
+            print("Занятия будут:")
+            print("15:30-17:00 ВБ-1")
+            print("11:50-12:30 ВБ-1")
+    if e == course5:
+        g = str(input("Введите день:"))
+        if g == dn1 or g == dn7 or g == dn6:
+            print("В этот день нет занятий")
+        if g == dn2:
+            print("Занятия будут:")
+            print("Григорян Н.М.")
+            print("16:20-17:00 ПД-1, i2")
+            print("17:10-17:50 ПД-1, i2")
+        if g == dn3:
+            print("Занятия будут:")
+            print("Григорян Н.М.")
+            print("16:20-17:00 ПД-3, i5")
+            print("17:10-17:50 ПД-3, i5")
+        if g == dn4:
+            print("Занятия будут:")
+            print("Григорян Н.М.")
+            print("16:20-17:00 ПД-1, i5")
+            print("17:10-17:50 ПД-1, i5")
+            print("18:00-18:40 ПД/6, i5")
+        if g == dn5:
+            print("Занятия будут:")
+            print("Григорян Н.М.")
+            print("11:00-11:40 ПД-3, i5")
+            print("11:50-12:30 ПД-3, i5")
+    if e == course6:
+        g = str(input("Введите день:"))
+        if g == dn2 or g == dn3 or g == dn4 or g == dn6 or dn7:
+            print("В этот день нет занятий")
+        if g == dn1:
+            print("Занятия будут:")
+            print("15:30-16:10 МП-1")
+            print("16:20-17:00 МП-1")
+            print("17:10-17:50 ПД/13, i4")
+        if g == dn5:
+            print("Занятия будут:")
+            print("15:30-16:10 МП-1, i1")
+            print("16:20-17:00 МП-1, i1")
+    if e == course7:
+        g = str(input("Введите день:"))
+        if g == dn1 or g == dn3 or g == dn6 or g == dn7:
+            print("В этот день нет занятий")
+        if g == dn2:
+            print("Занятия будут:")
+            print("16:20-17:00 ОМ-1")
+            print("17:10-17:50 ОМ-1")
+            print("18:00-18:40 ОМ-2")
+            print("18:50-19:30 ОМ-2")
+        if g == dn4:
+            print("Занятия будут:")
+            print("16:20-17:00 ОМ-1")
+            print("17:10-17:50 ОМ-1")
+            print("18:00-18:40 ОМ-2")
+            print("18:50-19:30 ОМ-2")
+        if g==dn5:
+            print("Занятия будут:")
+            print("18:00-18:40 ПД/12")
+    if e == course8:
+        g = str(input("Введите день:"))
+        if g == dn2 or g == dn4 or g == dn6 or g == dn7:
+            print("В этот день нет занятий")
+        if g == dn1:
+            print("Занятия будут:")
+            print("16:20-17:00 ПР/В-1")
+            print("17:10-17:50 ПР/В-1")
+            print("18:00-18:40 ПР/В-2")
+            print("18:50-19:30 ПР/В-2")
+        if g == dn3:
+            print("Занятия будут:")
+            print("16:20-17:00 ПР/В-1")
+            print("17:10-17:50 ПР/В-1")
+            print("18:00-18:40 ПР/В-2")
+            print("18:50-19:30 ПР/В-2")
+        if g == dn5:
+            print("Занятия будут:")
+            print("17:10-17:50 ПД/10")
